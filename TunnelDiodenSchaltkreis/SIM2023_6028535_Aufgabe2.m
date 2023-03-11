@@ -4,7 +4,7 @@ deltaT = 10e-12;
 tInv = 0:deltaT:30e-9;
 
 vC = linspace(-0.5, 1.5, 20);
-iL = linspace(-0.5, 1.5, 20);
+iL = linspace(-0.5e-3, 1.5e-3, 20);
 ys = cell(length(vC), length(iL), 2);
 
 for vCIdx = 1:length(vC)
@@ -31,17 +31,6 @@ for vCIdx = 1:length(vC)
     for iLIdx = 1:length(iL)
         t = ys{vCIdx,iLIdx,1};
         y = ys{vCIdx,iLIdx,2};
-        vCEqui = y(length(y), 1);
-        if vCEqui < 0.1
-            disp("first");
-            first = max([first, vCEqui]);
-        elseif vCEqui < 0.8
-            disp("second");
-            second = max([second, vCEqui]);
-        else
-            disp("third");
-            third = min([third, vCEqui]);
-        end
         subplot(2,2,1), hold on;
         plot(t, y(:,1)), hold on;
         subplot(2,2,2), hold on;
