@@ -9,7 +9,7 @@ cR  = 0.013;  % Rollwiderstandsbeiwert
 cW  = 0.28;   % Luftwiderstandsbeiwert
 rho = 1.21;   % kg/m3, Luftdichte
 A   = 2;      % m2, Referenzfläche für Luftwiderstand
-m   = 2000;   % kg, Fahrzeugmasse
+m   = 1500;   % kg, Fahrzeugmasse
 g   = 9.81;   % m/s2, Fallbeschleunigung
 
 %% Anfangsbedingungen
