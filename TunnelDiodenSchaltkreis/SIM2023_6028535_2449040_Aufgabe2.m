@@ -12,7 +12,7 @@ ys = cell(length(vC), length(iL), 2);
 for vCIdx = 1:length(vC)
     for iLIdx = 1:length(iL)
         x0 = [vC(vCIdx); iL(iLIdx)];
-        [t, y] = ode45(@SIM2023_6028535_Aufgabe2_f, tInv, x0);
+        [t, y] = ode45(@SIM2023_6028535_2449040_Aufgabe2_f, tInv, x0);
         ys{vCIdx, iLIdx, 1} = t;
         ys{vCIdx, iLIdx, 2} = y;
     end
@@ -24,8 +24,8 @@ h = zeros(size(vC2));
 g = zeros(size(vC2));
 
 for i = 1:length(vC2)
-    h(i) = SIM2023_6028535_Aufgabe2_h(vC2(i));
-    g(i) = SIM2023_6028535_Aufgabe2_g(vC2(i));
+    h(i) = SIM2023_6028535_2449040_Aufgabe2_h(vC2(i));
+    g(i) = SIM2023_6028535_2449040_Aufgabe2_g(vC2(i));
 end
 
 %Graphs

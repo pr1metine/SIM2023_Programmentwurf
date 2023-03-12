@@ -1,4 +1,4 @@
-function [g] = SIM2023_6028535_Aufgabe2_g(vC)
+function [g] = SIM2023_6028535_2449040_Aufgabe2_g(vC)
     %Constants
     u = 1.2;
     R = 1500;
