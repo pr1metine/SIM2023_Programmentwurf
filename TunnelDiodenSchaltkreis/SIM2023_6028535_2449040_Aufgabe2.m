@@ -40,6 +40,7 @@ for vCIdx = 1:length(vC)
         subplot(2,2,3), hold on;
         plot(y(:,1), y(:,2)), hold on;
         plot(y(1,1), y(1,2), 'o'), hold on;
+        plot(y(end,1), y(end,2), 'bx', 'MarkerSize', 10), hold on;
     end
 end
 subplot(2,2,4), hold on;
